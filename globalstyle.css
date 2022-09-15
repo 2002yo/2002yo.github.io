@@ -1,0 +1,266 @@
+﻿body {
+  /**/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+* {
+  font-family: "quickSand ", sans-serif, Gill Sans, Gill Sans MT, Calibri,
+    Trebuchet MS, sans-serif;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container h1 {
+  font: sans-serif;
+  text-align: center;
+  color: darkseagreen;
+}
+h2,
+h4 {
+  font-family: sans-serif, Arial, Helvetica, georgia;
+  margin: 0.5em 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  text-align: center;
+  color: black;
+}
+#container {
+  /* min-width: 600px; */
+  /*max-width: 1200px;*/
+  max-height: 2000px;
+  width: 100%;
+  margin: 10 auto;
+}
+#logo {
+  min-width: 50px;
+  max-width: 50px; 
+  margin: 1em;
+  text-align: left;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  padding: 1em;
+  margin: 0;
+}
+
+.navigation {
+  position: sticky; 
+  top: 0; 
+  /* z-index: 10; */
+}
+.mainnav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  /* height: 65px; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row Wrap;
+  background-color: #307d7e;
+}
+
+.navText {
+  padding-left: 5px;
+  color: whitesmoke;
+}
+
+.mainnav a {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-position: center;
+  text-decoration: double;
+  display: block;
+  color: whitesmoke;
+}
+.mainnav a :hover {
+  text-decoration: underline;
+  color: #ffff00;
+}
+
+.scrollUp a{
+	display: flex;
+	flex-direction: row;
+	/* width: 50px; */
+	height: 50px;
+}
+.scrollUp a span{
+	background-color: #000;
+	width: 20px;
+	height: 5px;
+	border-radius: 20px;
+}
+.scrollUp a span:nth-of-type(1){
+	transform: rotate(-20deg);
+}
+.scrollUp a span:nth-of-type(2){
+	transform: matrix(0.94,-034,0.34,0.9,4, -5, 0);
+} 
+
+#mainImage {
+  width: 100%;
+  height: 450px;
+  display: block;
+  padding: 0;
+  filter: brightness(60%);
+  object-fit: fill;
+}
+.cont {
+  display: flex;
+  flex-direction: row;
+  align-items: justify;
+  gap: 20px;
+
+}
+.cont p  {
+  text-align: justify;
+}
+.cont ul li{
+  text-align: justify;
+} 
+.processboxes .cont {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+#Subimg {
+  min-width: 200px;
+  max-width: 200px;
+  /* margin: 1em; */
+  object-fit: fill;
+  border-radius: 30px;
+  /* float: left; */
+  /* margin:0px 15px 15px 0px; */
+}
+
+#Subimg2 {
+  min-width: 250px;
+  max-width: 200px;
+  /* margin: 1em; */
+  object-fit: fill;
+  border-radius: 30px;
+  /* float: right; */
+  /* margin:0px 15px 15px 0px; */
+}
+#facts {
+  padding: 30px 20px;
+}
+.teabox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.teabox .box {
+  padding: 10px;
+  margin: auto;
+  width: 300px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.22);
+  text-align: left;
+  background-color: #ABD5AB;
+}
+.teabox #img1 ,#img2,#img3 {
+    width: 200px;
+    border-radius: 10%;
+    padding: 10px;
+    
+}
+.teabox .box .benefit1,
+.teabox .box .benefit2 {
+  margin-left: 30px;
+}
+.processboxes {
+  margin: 20px;
+  padding: 30px;
+}
+footer {
+  background: #307d7e;
+  padding: 1em;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em;
+}
+
+footer a {
+  text-justify: auto;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer ul li a {
+  display: block;
+  color: whitesmoke;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffff00;
+}
+
+footer p {
+  text-align: center;
+}
+footer .cont {
+  width: 60%;
+  justify-content: space-between;
+}
+/*styling for main page and header and footer */
+@media only screen and (max-width: 1000px) {
+  .mainnav ul {
+    flex-direction: column;
+  }
+  .teabox {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .cont,
+  .processboxes .cont {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .cont {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .teabox .box,
+  #Subimg {
+    width: 100%;
+  }
+  footer {
+    align-items: flex-start;
+  }
+  footer .socials {
+    align-self: center;
+  }
+  footer p {
+    /* margin: 20px 0; */
+    word-wrap: break-word;
+  }
+}

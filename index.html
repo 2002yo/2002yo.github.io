@@ -8,11 +8,21 @@
     <title>home page</title>
     <link rel="stylesheet" href="/css/globalstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a33c">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#00a33c">
+    <link rel="manifest"  href="json/manifest.json">
 </head>
 
 <body>
     <div id="container">
-        <header>
+        <header id="top">
             <img id="logo" src="/images/logo/logo2.jpg">
             <h1>TAPROBANE TEA</h1>
         </header>
@@ -20,85 +30,93 @@
             <nav class="mainnav">
                 <ul>
                     <li><a href="index.html"><span class="navText">HOME</span></a></li>
-                    <li><a href="museum.html"><span class="navText">TEA MUSEUM</span></a></li>
                     <li><a href="Plantation.html"><span class="navText">PLANTATIONS</span></a></li>
+                    <li><a href="museum.html"><span class="navText">TEA MUSEUM</span></a></li>
                     <li><a href="byproducts.html"><span class="navText">BY PRODUCTS</span></a></li>
-                    <li><a href="purchase and donate.html"><span class="navText">PURCHASE </span></a></li>
                     <li><a href="teasales.html"><span class="navText">WEB SHOP 1</span></a></li>
-                    <li><a href="teasales.html"><span class="navText">WEB SHOP 2 </span></a></li>
-
+                    <li><a href="teasales2.html"><span class="navText">WEB SHOP 2 </span></a></li>
+                    <li><a href="purchase and donate.html"><span class="navText">PURCHASE </span></a></li>
                 </ul>
             </nav>
+            <div class="scrollUp">
+                <a href="#top">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
         </div>
         <img id="mainImage" src="images\home\main image.jpg" alt="tea plantation" />
         <main>
             <section class="home">
                 <h2>About Our Tea Industry</h2>
-                <img id="Subimg" src="images\home\sri lanka.jpg" alt="sri lanka" />
-                <p>
-                    Sri Lanka is an island made for tea.
-                    This was introduced in 1867, Ceylon Tea has grown to be the top agriculture export in Sri Lanka and
-                    provides direct and
-                    indirect employment to nearly 1 million people while around 4% of the country’s land area is covered
-                    in tea plantations amounting to nearly 203000 hectares.
-                    The country produces tea throughout the year and the total tea production is about 340 million
-                    kilograms per annum. Sri Lanka’s tea-growing areas are mainly concentrated in the central highlands
-                    and southern inland areas of the island.
-                    Tea grown in these areas are broadly grouped according to their elevations, with high grown tea
-                    sourced from tea plantations found from 1200 m upwards; medium grown tea from estates scattered
-                    between 600 m to 1200 m and low grown tea from sea level up to 600 m.
-                    In addition, Sri Lanka’s tea-growing areas are also divided into seven main regions based mainly on
-                    the terroir, namely Nuwara Eliya, Uda Pussellawa, Uva, Dimbula, Kandy, Sabaragamuwa, and Ruhuna.
-                    Each area produces a uniquely flavored Ceylon Tea,
-                    mainly due to the contrasting elevation, climate, and terrain in each region.
-                    At present, a larger portion of the country’s tea is exported as Ceylon Black Tea, while the country
-                    also produces Ceylon Green Tea, a type developed from Assamese seedlings. Ceylon White Tea, namely
-                    silver and golden tips is celebrated around the world for their
-                    finest flavor and are among the most expensive tea varieties in the world.
-                </p>
-                <br>
-
+                <div class="cont">
+                    <img id="Subimg" src="images\home\sri lanka.jpg" alt="sri lanka" />
+                    <p>
+                        Sri Lanka is an island made for tea.
+                        This was introduced in 1867, Ceylon Tea has grown to be the top agriculture export in Sri Lanka and
+                        provides direct and
+                        indirect employment to nearly 1 million people while around 4% of the country’s land area is covered
+                        in tea plantations amounting to nearly 203000 hectares.
+                        The country produces tea throughout the year and the total tea production is about 340 million
+                        kilograms per annum. Sri Lanka’s tea-growing areas are mainly concentrated in the central highlands
+                        and southern inland areas of the island.
+                        Tea grown in these areas are broadly grouped according to their elevations, with high grown tea
+                        sourced from tea plantations found from 1200 m upwards; medium grown tea from estates scattered
+                        between 600 m to 1200 m and low grown tea from sea level up to 600 m.
+                    </p>
+                     <p>
+                        In addition, Sri Lanka’s tea-growing areas are also divided into seven main regions based mainly on
+                        the terroir, namely Nuwara Eliya, Uda Pussellawa, Uva, Dimbula, Kandy, Sabaragamuwa, and Ruhuna.
+                        Each area produces a uniquely flavored Ceylon Tea,
+                        mainly due to the contrasting elevation, climate, and terrain in each region.
+                        At present, a larger portion of the country’s tea is exported as Ceylon Black Tea, while the country
+                        also produces Ceylon Green Tea, a type developed from Assamese seedlings. Ceylon White Tea, namely
+                        silver and golden tips is celebrated around the world for their
+                        finest flavor and are among the most expensive tea varieties in the world.
+                    </p> 
+                    <br>
+                </div>
             </section>
-
             <section>
                 <div class="processboxes">
-                    <ul>
-                        <h2>HOW TEA IS PROCESSING ? </h2>
+                    <h2>HOW TEA IS PROCESSING ? </h2>
+                    <div class="cont">
                         <img id="Subimg2" src="images\home\tea jars.jpg" alt="tea jars" />
-
-                        <li class="box">
-                            <h4><b>THE CHOSEN LEAVES</b> </h4>- The first secret is in the art of plucking. To ensure
-                            the excellence of the final product, skilled hands aided by trained eyes pluck only unopened
-                            buds accompanied by two leaves sprouting from the springs of each tea bush.
-                        </li>
-                        <li class="box">
-                            <h4><b>THE ROLLING</b> </h4>- Once the withering process is finally through and done, the
-                            withered leaves enter the third stage. It’s called rolling. They are fed to rolling machines
-                            to break their stubborn cell structures of resistance, to open their hearts and seduce them
-                            to release the natural essence contained within.
-                        </li>
-                        <li class="box">
-                            <h4><b>BLOW HOT,COLD</b></h4>- Next, they must go through fermentation, the process of
-                            oxidation; exposed to air which will brown them to a perfect tan. Then after being blown
-                            cold they must be blown hot. They must go through the furnace of fire, pass through a
-                            chamber of hot air, and emerge with the mettle of their flavor tried, tested and proven.
-                            It’s this that will set them apart.
-                        </li>
-                        <li class="box">
-                            <h4><b>AT LAST</b></h4> -The tea is still not ready for your cup. The tea is now placed on a
-                            vibrating mesh and sorted according to size and grades, before they are weighed and packed
-                            separately to be presented to the world as the pride of Ceylon Tea: the enchantment that
-                            will fill your cup.
-                        </li>
-                    </ul>
-
+                        <ul>
+                            <li class="box">
+                                <h4><b>THE CHOSEN LEAVES</b> </h4>- The first secret is in the art of plucking. To ensure
+                                the excellence of the final product, skilled hands aided by trained eyes pluck only unopened
+                                buds accompanied by two leaves sprouting from the springs of each tea bush.
+                            </li>
+                            <li class="box">
+                                <h4><b>THE ROLLING</b> </h4>- Once the withering process is finally through and done, the
+                                withered leaves enter the third stage. It’s called rolling. They are fed to rolling machines
+                                to break their stubborn cell structures of resistance, to open their hearts and seduce them
+                                to release the natural essence contained within.
+                            </li>
+                            <li class="box">
+                                <h4><b>BLOW HOT,COLD</b></h4>- Next, they must go through fermentation, the process of
+                                oxidation; exposed to air which will brown them to a perfect tan. Then after being blown
+                                cold they must be blown hot. They must go through the furnace of fire, pass through a
+                                chamber of hot air, and emerge with the mettle of their flavor tried, tested and proven.
+                                It’s this that will set them apart.
+                            </li>
+                            <li class="box">
+                                <h4><b>AT LAST</b></h4> -The tea is still not ready for your cup. The tea is now placed on a
+                                vibrating mesh and sorted according to size and grades, before they are weighed and packed
+                                separately to be presented to the world as the pride of Ceylon Tea: the enchantment that
+                                will fill your cup.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section id="facts">
-                <h1>WHY CEYLON TEA IS SO SPECIAL</h1>
+                <h1>THE SPECIALITY OF CEYLON TEA</h1>
                 <div class="teabox">
                     <div class="box">
                         <h3>PROVEN BENEFITS OF TEA</h3><br>
+                        <img id="img1" src="images/home/benefit1.jpg">
                         <ol class="benefit1">
                             <li>Fight allergies</li>
                             <li>Reduce body fat</li>
@@ -110,6 +128,7 @@
                     </div>
                     <div class="box">
                     <h3>THE BENEFITS OF COMPOST TEA</h3><br>
+                    <img id="img2" src="images/home/benefit2.jpeg">
                     <ul class="benefit2">
                         <li>Protects against many diseases & harmful organisms</li>
                         <li>Low strenght fertilizer perfect for house plants,seedlings and gradens</li>
@@ -118,6 +137,7 @@
                 </div>
                     <div class="box">
                     <h3>DID YOU KNOW ?</h3>
+                    <img id="img3" src="images/home/facts.jpg">
                     <p>The tea plant is the source of all true teas,such as <b>green</b>,<b>black</b><b>yellow</b>
                         and<b>oolong</b>.Tea leaves are popularly consumed as a <b>warm infusion</b> or as a
                         refreshing,<b>cooling beverage</b>
@@ -136,21 +156,19 @@
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">CONTACT US</a></li>
                 </ul>
-
             </nav>
-            <p>copyrights &copy; taprobane tea</p>
-            <nav>
-                <ul>
-
-                    <li><a href="#"></a> <i class="fa fa-facebook">Facebook</i></a></li>
-                    <li><a href="#"></a><i class="fa fa-instagram">Instagram</i></a></li>
-                    <li><a href="#"></a> <i class="fa fa-youtube">Youtube</i></a></li>
-                    <li><a href="#"></a><i class="fa fa-twitter">Twitter</i></a></li>
-                </ul>
-            </nav>
-
+            <div class="cont">
+                <p>copyrights &copy; taprobane tea</p>
+                <div class="socials">
+                    <ul>
+                        <li><a href="#"></a> <i class="fa fa-facebook">Facebook</i></a></li>
+                        <li><a href="#"></a><i class="fa fa-instagram">Instagram</i></a></li>
+                        <li><a href="#"></a> <i class="fa fa-youtube">Youtube</i></a></li>
+                        <li><a href="#"></a><i class="fa fa-twitter">Twitter</i></a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
-
 </html>
