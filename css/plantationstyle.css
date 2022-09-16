@@ -9,7 +9,7 @@
     font-size: 20px;
     margin: .8em .8em;
     width: auto;
-    height: 300px;
+    /* height: 300px; */
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,0.30),0 10px 10px rgba(0,0,0,0.22);
     background-color: rgba(255,224,179,0.2);
@@ -28,48 +28,69 @@
     height:auto;
     margin: 0 10px;
 }
-td img{
-    max-width: 70px;
-    margin: 10px;
-}
-.content-table{
-    width:100%;
-}
-.content-table{
-    border-collapse:collapse;
-    margin: 30px 0;
-    font-size: 0.9em;
-    min-width:400px;
-    border-radius:5px 5px 0 0;
-    overflow:hidden;
-    box-shadow:0 0 5px;
-}
-.content-table thead tr{
-    background-color:#009879;
-    color:#ffffff;
-    text-align:left;
-    font-weight:bold;
-}
-.content-table th,
-.content-table td{
-    padding:20px;
-    
-}
-.content-table tbody tr{
-    border-bottom:3px solid #dddddd;
-}
-.content-table thead th{
-    text-align: center;
-}
-
-.content-table tbody tr td:nth-of-type(1){
+.table-section{
+    margin:0 30px 50px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
 }
-.content-table tbody tr:nth-of-type(even) {
-    background-color:#f3f3f3;
+table{
+    width:100%;
+    border-collapse: collapse;
+    border: 3px solid #009879;
 }
-.content-table tbody tr:last-of-type{
-    border-bottom: 30px solid #009879;
+table caption{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
 }
+thead,
+tfoot{
+    text-align: center;
+    font-weight: bold;
+    background: #009879;
+    color:white ;
+}
+tr td{
+    border-bottom: 3px solid #009879;
+}
+tbody tr img{
+    width:65px;
+}
+th,
+td{
+    padding:20px;
+}
+ @media only screen and (max-width: 1000px) {
+    .mainnav ul {
+      flex-direction: column;
+    }
+    #plantation  .region{
+      flex-direction: column ;
+    }
+ }
+@media only screen and (max-width: 750px) {
+    footer .cont {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+@media only screen and (max-width: 650px) {
+    footer {
+      align-items: flex-start;
+    }
+    footer .socials {
+      align-self: center;
+    }
+    footer p {
+      margin: 20px 0; 
+      word-wrap: break-word;
+    }
+    .content-table {
+        overflow-x: auto;
+    }
+     }
+
+    
+  

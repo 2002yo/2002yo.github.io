@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Plantations page</title>
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/globalstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/plantationstyle.css">
@@ -18,7 +19,7 @@
     <meta name="msapplication-config" content="images/browserconfig.xml">
     <meta name="theme-color" content="#00a33c">
     <link rel="manifest"  href="json/manifest.json">
-</head>
+</head> 
 <body>
     <div id="container">
         <header>
@@ -133,9 +134,9 @@
                 </secton>
                 <section>
                     <!-- <img id="exports" src="images\plantation page\export.png" alt="exports" height="350" />  -->
-                    <div class="content-table">
+                    <div class="content-table" id="t">
                         <table >
-                            <caption><h2>Exporting details of our Tea Grades</h2></caption>
+                            <caption><h4>Exporting details of our Tea Grades</h4></caption>
                             <thead>
                                 <tr>
                                     <th>Tea type</th>
@@ -145,20 +146,25 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td> Broken Orange Pekoe  <img src="\images\plantation page\tea1.jpg"></td>
+                                    <td> <img src="\images\plantation page\tea1.jpg" class="table-image"> Broken Orange Pekoe </td>
                                     <td> Russia,SaudiaArabia, Iraq,Iran</td>
                                     <td> 46,000 MT</td>
                                 </tr>
                                 <tr>
-                                    <td> Broken Orange Pekoe Fanning’s <img src="\images\plantation page\tea1.jpg"></td>
+                                    <td> <img src="\images\plantation page\tea1.jpg" class="table-image">Broken Orange Pekoe Fanning’s </td>
                                     <td> Russia,SaudiaArabia,China,Syria</td>
                                     <td> 56,000 MT</td>
                                 </tr>
                                 <tr>
-                                    <td> Orange Pekoe <img src="\images\plantation page\tea1.jpg"></td>
+                                    <td> <img src="\images\plantation page\tea1.jpg" class="table-image">Orange Pekoe </td>
                                     <td> Lybia,Turkey, Iraq,Iran</td>
                                     <td> 36,000 MT</td>
                                 </tr>
+                              <tfoot>
+                                <tr>
+                               <td>For more information about our exports click this link <a href="https://www.srilankabusiness.com" target="_blank">https://www.srilankabusiness.com</a></td>
+                                </tr>
+                              </tfoot>
                             </tbody>
                         </table>
                     </div>
@@ -179,14 +185,16 @@
             <p>copyrights c taprobane tea</p>
             <div class="socials">   
                 <ul>
-                    <li><a href="#" ></a><i class="fa fa-facebook"></i>Facebook</a></li>
-                    <li><a href="#" ></a><i class="fa fa-instagram"></i>Instagram</a></li>
-                    <li><a href="#" ></a><i class="fa fa-youtube"></i>Youtube</a></li>
-                    <li><a href="#"></a><i class="fa fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#" ></a><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" ></a><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#" ></a><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"></a><i class="fa fa-twitter"></i></a></li>
                 </ul>
             </div>
             </div>
         </footer>
+        <!-- (Ceylon Tea Corporation Sri Lanka, 2022) -->
+        <!-- (Sri Lanka Export Development Board, 2022) -->
     </div>
 </body>
 </html>

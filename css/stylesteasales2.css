@@ -1,4 +1,4 @@
-﻿body {
+body {
     font-family: "sans-serif",Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
     color: rgb(17,17,17);
     box-sizing: border-box;
@@ -6,47 +6,40 @@
 section{
     margin:30px 0;
 }
-h3  {
-  color: rgb(3, 73, 50);
-  /* line-height:10px; */
-  text-align: justify;
-}
 #TeaTypes .teatypes {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     padding: 10px;
-    background-color: rgb(220, 231, 228);
+    background-color: whitesmoke;
     margin: auto;
-    width: calc(80% - 1em);
+    width: calc(60% - 1em);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,0.30), 0 10px 10px rgba(0,0,0,0.22);
-    background-color:rgba(116, 199, 116, 0.315);
+    background-color: rgba(255,224,179,0.2); 
+}
+.teatypes #teacups{
+    width: 250px;
 }
 .teatypes img{
     margin: 15px;
 }
 .teatypes .teabutton {
     margin: 10px 0;
-    /* background-color: #196606;  */
-    /* position: absolute; */
-    display: inline-block;
+    background-color: #4CAF50; 
     border: none;
-    color: rgb(252, 249, 249);
-    padding: 15px;
+    color: white;
+    padding: 8px;
     text-align: center;
-    text-decoration:underline;
-    text-transform: uppercase;
-    font-size: 18px;
+    text-decoration: none;
+    font-size: 20px;
     border-radius: 10px;
-    align-items: center;
-    background: linear-gradient(90deg,#6ecfc2,#1c9681);
-}   
-
+    
+}
 @media only screen and (max-width: 1000px) {
     .mainnav ul {
       flex-direction: column;
     }
-    #TeaTypes .teatypes {
+    #TeaTypes  .teatypes {
       flex-direction: column;
     }
   }
@@ -68,8 +61,8 @@ h3  {
       /* margin: 20px 0; */
       word-wrap: break-word;
     }
-    #TeaTypes .teatypes {
-        width: auto;
+    .teatypes #teacups{
+      width:auto;
     }
   }
   
