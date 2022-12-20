@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/globalstyle.css">
+    <link rel="stylesheet" href="css/booktickets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a33c">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#00a33c">
+    <link rel="manifest"  href="json/manifest.json">
+</head>
+<body>
+
+    <!-- <img id="ticketbackground" src ="\images\museum page\visit1 .jpg"> -->
+    <div id="container">
+        <header id="top">
+            <img id="logo" src="/images/logo/logo2.jpg">
+          <h1>TAPROBANE TEA</h1>
+          
+        </header>
+        </div>
+<main>
+    <h1>BOOK NOW</h1>
+<div class="train form">
+<form id ="form">
+    
+        <h4>When are you going to come to visit? </h4>
+        <input type="date" id="bookdate" name="booking">
+              
+ <!--GUEST INFORMATION--> 
+<fieldset>
+    <legend>GUEST INFORMATION</legend> 
+    <div id="guestInfo">
+<div class="info">
+	<p>
+        <label for="fullname">Full Name : </label> 
+		<input type="text" id="fullname" name="Name" required><br><br>
+        <div class="error"></div>
+    </p>
+</div>
+	<p>
+
+        <label for="phone"> Country Code: </label>
+		<input type="tel" id="phone" name="Number" >
+        <label for ="phone">Phone number</label>
+        <input type="tel" id="phone1" name="Number"  >
+        <br><br>
+        <div class="error"></div>
+	</p> 
+	<p>
+        <label for="email">E-mail :</label> 
+		<input type="email" id="email" name="info"><br><br>
+        <div class="error"></div>	
+	</p>
+    <p>
+        <label for="email"> Confrim E-mail :</label> 
+		<input type="email" id="email2" name="info" ><br><br>
+        <div class="error"></div>
+    </p>
+    <p>
+       <label for="gender">Gender :</label>
+       <select id ="Gender" name="info">
+       <option value="female">Female</option>
+       <option value="male">Male</option>
+       </select>  
+    </p>
+    <input type="reset" id="reset">
+    </div>
+</fieldset>
+
+<!--number of guest  local and foreigners-->
+
+<fieldset>
+    <legend>NUMBER OF GUESTS</legend>
+    <div id="number">
+        <label for="localA">Local Adult</label><br>
+        <span class="minus"> - </span>
+        <span class="num"> 0 </span>
+        <span class="plus"> + </span> 
+    </div><br>
+    
+    <div id ="number">    
+        <label for="foreignA">Local Child</label><br>
+        <span class="minus1" class="InDe"> - </span>
+        <span class="num1"> 0 </span>
+        <span class="plus1" class="InDe"> + </span>  
+    </div><br>
+
+    <div id="number">
+        <label for="localC">Foreign Adult</label><br>
+        <span class="minus2" class="InDe"> - </span>
+        <span class="num2"> 0 </span>
+        <span class="plus2" class="InDe"> + </span> 
+    </div><br>
+        
+    <div id="number">
+        <label for="foreignC" >Foreign Child</label><br>
+        <span class="minus3" class="InDe"> - </span>
+        <span class="num3"> 0 </span>
+        <span class="plus3"class="InDe"> + </span>   
+    </div><br> 
+
+    <div id="number">
+        <label for="infant">Infants</label>
+        <span class="minus4"class="InDe"> - </span>
+        <span class="num4"> 0 </span>
+        <span class="plus4"class="InDe"> + </span>
+    </div>
+    
+     <!-- duration--> 
+<fieldset>
+    <legend>DURATION</legend> 
+    <div class = "DueSelect">
+    
+	<p>
+		<label for="duration">Select the Duration </label>
+		<select id="hours" name="info">
+			<option value="3hours"selected>3 Hours</option>
+			<option value="half day">Half Day </option> 
+			<option value="full Day" >Full Day</option> 
+		</select> 
+	</p> 
+</div>  
+</fieldset>
+
+
+
+
+<fieldset>
+    <legend>Cost of the Orders</legend>
+    <p id ="currentOrder"></p>
+    
+    <p id="table"></p> 
+    <div id="bookingAmount"></div> 
+</fieldset>
+
+
+</fieldset>
+
+<p><button type="button" id="add" >Add to order</button></p>
+<p><button type="button" id="place">Place to order</button></p>
+
+<p id="output1"></p>
+</form>
+</div>
+</main>
+       
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">TERMS & CONDITIONS</a></li>
+            <li><a href="#">USER AGREEMENT</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div class="cont">
+        <p>copyrights &copy; taprobane tea</p>
+        <div class="socials">
+            <ul>
+                <li><a href="#"></a> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"></a><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"></a> <i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"></a><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- (HerbaZest Corporation, 2022) 
+(Ceylon Tea Sri Lanka, 2022)    -->
+</div>
+</body>
+<script src="/javascript/main.js"></script>
+</html>

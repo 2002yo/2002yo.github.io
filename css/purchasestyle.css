@@ -5,9 +5,11 @@
     align-items: center;
     padding: 20px 10px;
 }
+
 .items  img,.items1 img,.items2 img{
     width: 200px;
 }
+
 .button {
     background-color: #4CAF50;
     border: none;
@@ -29,14 +31,15 @@
     background-color:yellow;
     color:white;
 }
+
 label{
     font-size:22px;
 }
+
  .items  {
     display: flex;
     flex-direction: row;
 }
-
 
 .collection .d-button{
     background-color:#005457;
@@ -45,6 +48,7 @@ label{
     text-decoration:underline;
    
 }
+
 .collection .items{
     display: flex;
     flex-direction: row;
@@ -53,6 +57,7 @@ label{
     padding: 40px 20px;
     border-radius: 15%;
 }
+
 .collection .z-button{
     background-color:#005457;
     color: white;
@@ -60,6 +65,7 @@ label{
     text-decoration:underline;
    
 }
+
 .Paybutton {
     background-color: darkolivegreen;
     border: none;
@@ -75,15 +81,18 @@ label{
     border-radius: 8px;
     align-items: center;
 }
+
 .Paybutton {
     background-color: white;
     color: black;
     border: 2px solid #4CAF50;
 }
+
 .button :hover {
     background-color: #4CAF50;
     color: white;
 }
+
 .text {
     width:300px;
     height:50px;
@@ -96,20 +105,23 @@ label{
 /* .text :focus {
     border: 3px solid grey;
 } */
+
 #donate  {
     width: 100%;
-    height:400px;
+    height:auto;
     display: block;
     padding: 0;
     filter: brightness(40%);
     object-fit: fill;
     margin: 0 auto;
 }
+
 .donation {
     position: relative;
     text-align: center;
     color: white;
 }
+
 .topright {
     position: absolute;
     top: 12px;
@@ -132,6 +144,7 @@ label{
     text-align: center;
     background-color:mediumseagreen;
 }
+
 @media only screen and (max-width: 1000px) {
     .mainnav ul {
       flex-direction: column;
